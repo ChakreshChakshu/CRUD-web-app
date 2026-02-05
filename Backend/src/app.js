@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors({
   origin: [
-    "https://dancing-lolly-9398c4.netlify.app/"
+    "https://acceptable-analysis-production.up.railway.app/"
   ],
   credentials: true
 }));

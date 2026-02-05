@@ -36,10 +36,10 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="glass-panel p-8 md:p-10 rounded-[2rem] space-y-8 animate-in fade-in zoom-in duration-300"
+      className="glass-panel p-5 md:p-5 rounded-[2rem] space-y-2 animate-in fade-in zoom-in duration-300"
     >
       <div>
-        <h2 className="text-3xl font-bold text-brand-dark mb-2">
+        <h2 className="text-2xl font-bold text-brand-dark mb-1">
           {initialData ? "Edit Member" : "New Member"}
         </h2>
         <p className="text-brand-charcoal">
@@ -47,8 +47,8 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
         </p>
       </div>
 
-      <div className="space-y-6">
-        {/* Name Field */}
+      <div className="space-y-2">
+        
         <div>
           <label className="block text-sm font-semibold text-brand-dark mb-2 pl-1">
             Full Name
@@ -88,7 +88,7 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
           )}
         </div>
 
-        {/* Phone Field */}
+        
         <div>
           <label className="block text-sm font-semibold text-brand-dark mb-2 pl-1">
             Mobile Number
@@ -130,7 +130,7 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
           </div>
         </div>
 
-        {/* Address Field */}
+       
         <div>
           <label className="block text-sm font-semibold text-brand-dark mb-2 pl-1">
             Address <span className="text-brand-grey font-normal">(Optional)</span>
@@ -140,13 +140,13 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
             value={values.address}
             onChange={handleChange}
             placeholder="Enter full address"
-            rows={3}
+            rows={2}
             className="input-field resize-none"
           />
         </div>
       </div>
 
-      <div className="pt-6 border-t border-brand-light">
+      <div className="pt-2 border-t border-brand-light">
         <button
           type="submit"
           disabled={loading}

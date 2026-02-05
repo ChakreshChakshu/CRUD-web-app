@@ -41,8 +41,8 @@ const EditUser = () => {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-brand-surface font-sans overflow-hidden">
-      <div className="w-full max-w-2xl h-full flex flex-col p-6">
-        <div className="flex-none mb-6 pt-6">
+      <div className="w-full max-w-2xl h-full flex flex-col p-1">
+        <div className="flex-none mb-2 pt-2">
           <Link
             to="/"
             className="inline-flex items-center text-brand-charcoal hover:text-brand-dark transition-colors font-medium"
@@ -54,7 +54,7 @@ const EditUser = () => {
           </Link>
         </div>
 
-        <div className="flex-1 overflow-auto custom-scrollbar pb-6">
+        <div className="flex-1 overflow-auto custom-scrollbar pb-3">
           <UserForm initialData={user} onSubmit={handleUpdate} />
         </div>
       </div>

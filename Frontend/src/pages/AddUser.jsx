@@ -18,20 +18,20 @@ const AddUser = () => {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-brand-surface font-sans overflow-hidden">
-      <div className="w-full max-w-2xl h-full flex flex-col p-6">
-        <div className="flex-none mb-6 pt-6">
+      <div className="w-full max-w-2xl h-full flex flex-col p-2">
+        <div className="flex-none mb-2 pt-2">
           <Link
             to="/"
             className="inline-flex items-center text-brand-charcoal hover:text-brand-dark transition-colors font-medium"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
             Back to Dashboard
           </Link>
         </div>
 
-        <div className="flex-1 overflow-auto custom-scrollbar pb-6">
+        <div className="flex-1 overflow-auto custom-scrollbar pb-3">
           <UserForm onSubmit={handleCreate} />
         </div>
       </div>

@@ -1,1 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter", sans-serif;
+
+    --color-brand-dark: #2E3A3A;
+    --color-brand-charcoal: #5C5F60;
+    --color-brand-grey: #8C8E90;
+    --color-brand-lilac: #C4B6D0;
+    --color-brand-light: #D9DAD9;
+    --color-brand-surface: #F8F9FA;
+}
+
+:root {
+    font-family: var(--font-sans);
+    background-color: var(--color-brand-surface);
+    color: var(--color-brand-dark);
+}
+
+@layer utilities {
+    .glass-panel {
+        @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+    }
+
+    .input-field {
+        @apply w-full px-4 py-3 rounded-xl border border-brand-grey/30 bg-white/50 focus:outline-none focus:ring-2 focus:ring-brand-lilac/50 focus:border-brand-lilac transition-all duration-300;
+    }
+
+    .btn-primary {
+        @apply px-6 py-2.5 rounded-xl bg-brand-dark text-white font-medium hover:bg-brand-charcoal hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 active:scale-95 cursor-pointer;
+    }
+
+    .btn-secondary {
+        @apply px-6 py-2.5 rounded-xl bg-white text-brand-dark border border-brand-grey/20 font-medium hover:bg-brand-light/30 hover:shadow-md transition-all duration-300 active:scale-95 cursor-pointer;
+    }
+}

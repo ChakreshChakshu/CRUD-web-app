@@ -18,10 +18,10 @@ const ViewUser = () => {
   <div className="min-h-screen bg-slate-100 py-10 px-4">
     <div className="max-w-xl mx-auto">
 
-      {/* Card */}
+
       <div className="bg-white rounded-2xl shadow-sm p-8 space-y-6">
 
-        {/* Header */}
+
         <div>
           <h2 className="text-2xl font-semibold text-slate-800">
             User Profile
@@ -31,10 +31,8 @@ const ViewUser = () => {
           </p>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-slate-200" />
 
-        {/* Details */}
         <div className="space-y-4 text-sm">
           <div className="flex justify-between">
             <span className="text-slate-500">Name</span>
@@ -76,7 +74,6 @@ const ViewUser = () => {
           )}
         </div>
 
-        {/* Actions */}
         <div className="pt-6 flex justify-end">
           <Link
             to="/"

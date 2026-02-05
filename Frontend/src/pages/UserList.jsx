@@ -82,7 +82,6 @@ try {
     <div className="min-h-screen bg-[#DEDFE0] p-4 md:p-8 font-sans text-[#333F3B]">
       <div className="max-w-6xl mx-auto">
         
-        {/* Header Section */}
         <div className="bg-white/60 backdrop-blur-md p-6 rounded-[2rem] shadow-sm mb-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 border border-white">
           <div>
             <h1 className="text-3xl font-extrabold tracking-tight">Users</h1>
@@ -90,7 +89,6 @@ try {
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 flex-1 lg:justify-end">
-            {/* 🔍 SEARCH BAR */}
             <div className="relative flex-1 max-w-md">
               <span className="absolute inset-y-0 left-4 flex items-center text-[#8B8D91]">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -124,7 +122,7 @@ try {
           </div>
         </div>
 
-        {/* Table Container */}
+
         <div className="bg-white rounded-[2.5rem] p-4 shadow-xl shadow-gray-200/50 overflow-hidden border border-white">
           <UserTable
             users={users}
@@ -133,7 +131,6 @@ try {
           />
         </div>
 
-        {/* Pagination */}
         {!search && (
           <div className="flex justify-center items-center gap-4 mt-8 pb-10">
             <button

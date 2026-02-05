@@ -34,7 +34,6 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
     onSubmit={handleSubmit}
     className="bg-white rounded-2xl shadow-sm p-8 space-y-6"
   >
-    {/* Header */}
     <div>
       <h2 className="text-2xl font-semibold text-slate-800">
         User Details
@@ -43,8 +42,6 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
         Fill in the information below
       </p>
     </div>
-
-    {/* Name */}
     <div>
       <label className="block text-sm font-medium text-slate-700">
         Name
@@ -71,7 +68,6 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
       )}
     </div>
 
-    {/* Email */}
     <div>
       <label className="block text-sm font-medium text-slate-700">
         Email
@@ -98,7 +94,6 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
       )}
     </div>
 
-    {/* Phone */}
     <div>
       <label className="block text-sm font-medium text-slate-700">
         Phone
@@ -125,7 +120,6 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
       )}
     </div>
 
-    {/* Age */}
     <div>
       <label className="block text-sm font-medium text-slate-700">
         Age
@@ -153,7 +147,6 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
       )}
     </div>
 
-    {/* Address */}
     <div>
       <label className="block text-sm font-medium text-slate-700">
         Address
@@ -177,7 +170,6 @@ const UserForm = ({ initialData, onSubmit, loading }) => {
       />
     </div>
 
-    {/* Actions */}
     <div className="flex items-center justify-end gap-3 pt-4">
       <button
         type="submit"

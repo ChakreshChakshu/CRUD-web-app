@@ -6,9 +6,8 @@ const app = express();
 
 
 app.use(cors({
-  origin: [
-    "https://acceptable-analysis-production.up.railway.app/"
-  ],
+  origin: "https://dancing-lolly-9398c4.netlify.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 app.use(express.json());

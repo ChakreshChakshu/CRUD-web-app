@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL + "/api/users"
+  baseURL: import.meta.env.VITE_BASE_URL + "api/users"
 });
 console.log("API Base URL:", API.defaults.baseURL); // 🔥 DEBUGGING
 export const getUsers = (page = 1, limit = 10) =>
